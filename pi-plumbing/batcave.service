@@ -1,0 +1,12 @@
+[Unit]
+Description=uWSGI instance to serve batcave
+After=network.target
+
+[Service]
+User=pi
+Group=www-data
+WorkingDirectory=/var/www/batcave
+ExecStart=/usr/local/bin/uwsgi --ini /var/www/batcave/batcave.ini
+
+[Install]
+WantedBy=multi-user.target
