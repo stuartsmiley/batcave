@@ -35,6 +35,7 @@ run deploy script
 
 back on pi
 ```
+$ sudo systemctl daemon-reload
 $ sudo systemctl start batcave.service
 $ sudo systemctl status batcave.service
 $ sudo systemctl enable batcave.service
